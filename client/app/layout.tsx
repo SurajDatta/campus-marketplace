@@ -8,8 +8,11 @@ const defaultUrl = process.env.VERCEL_URL
 
 export const metadata = {
   metadataBase: new URL(defaultUrl),
-  title: "Campus Marketplace",
-  description: "A safe, secure, frictionless marketplace. Easily buy and sell your items in seconds and avoid scams.",
+  title: {
+    default: "Campus Marketplace",
+    template: "%s · Campus Marketplace",
+  },
+  description: "A student marketplace for public meetups, shared price approval, and simulated wallet protection.",
 };
 
 export default function RootLayout({
@@ -20,7 +23,7 @@ export default function RootLayout({
   return (
     <html lang='en' className={fonts.rubik.variable}>
       <body className="bg-background text-foreground">
-        <main className="min-h-screen flex flex-col items-center">
+        <main className="min-h-screen flex flex-col items-center w-full">
           <Providers>{children}</Providers>
         </main>
       </body>

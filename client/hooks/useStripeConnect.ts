@@ -1,6 +1,7 @@
 // hooks/useStripeConnect.ts
 import { useState, useEffect } from "react";
-import { StripeConnectInstance, loadConnectAndInitialize } from "@stripe/connect-js";
+import type { StripeConnectInstance } from "@stripe/connect-js";
+import { loadConnectAndInitialize } from "@stripe/connect-js/pure";
 import { createAccountSession } from '@/utils/services/stripe';
 
 export const useStripeConnect = (connectedAccountId: string | null): StripeConnectInstance => {

@@ -11,8 +11,8 @@ Every actor is derived from Supabase `auth.uid()`. Reservations, wallet holds, p
 completion, and cancellation are serialized with row locks and commit atomically. Money is integer
 cents and every wallet/receipt response says `simulated_wallet`.
 
-The existing screens remain available to the UI teammates, and the Stripe server client is
-intentionally disabled. Connect purchase buttons only to the simulated-wallet endpoints below.
+The branded frontend at `/`, `/buy`, `/sell`, and `/my-stuff` is connected to these endpoints. The
+Stripe server client is intentionally disabled; every marketplace screen uses the simulated wallet.
 
 ## Local setup
 
@@ -152,8 +152,9 @@ can win a race.
 
 ## Updating both devices
 
-The simplest integration is to poll the private transaction route every 1–2 seconds and compare its
-`revision`. Responses have `Cache-Control: no-store`.
+The meetup workspace polls the authenticated transaction collection every four seconds. For a more
+focused client, poll the private transaction route every 1–2 seconds and compare its `revision`.
+Responses have `Cache-Control: no-store`.
 
 The existing Supabase Realtime client can provide immediate notifications instead. Subscribe to the
 row, then refetch the sanitized API response when it changes:
