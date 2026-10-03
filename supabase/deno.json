@@ -1,0 +1,6 @@
+{
+  "imports": {
+    "@b-fuze/deno-dom": "jsr:@b-fuze/deno-dom@^0.1.48",
+    "@sigma/rust-base64": "jsr:@sigma/rust-base64@^0.2.7"
+  }
+}
