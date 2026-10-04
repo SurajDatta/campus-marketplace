@@ -1,5 +1,5 @@
-import CampusLanding from "@/components/Campus/CampusLanding";
+import CampusAuth from "@/components/Campus/CampusAuth";
 
 export default function HomePage() {
-  return <CampusLanding />;
+  return <CampusAuth mode="login" />;
 }

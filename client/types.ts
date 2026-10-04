@@ -22,9 +22,6 @@ export type PhotoType = Database['public']['Enums']['photo']
 export type AccountStatus = Database['public']['Enums']['account_status']
 export type MeetupStatus = Database['public']['Enums']['meetup_status']
 export type ContactSubject = Database['public']['Enums']['subject']
-export type Device = Database['public']['Tables']['credentials']['Row']
-export type Biometric = Database['public']['Tables']['biometric']['Row']
-
 export type EmailSendRequest = {
     email: string;
     subject: string;

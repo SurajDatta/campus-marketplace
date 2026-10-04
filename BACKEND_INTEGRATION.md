@@ -69,6 +69,10 @@ Errors use:
 The browser's Supabase session cookie authenticates private routes. Never add user IDs to these
 payloads; the database derives the caller from the validated session.
 
+The `/login` and `/signup` screens use Supabase Auth directly. A database trigger creates a `$0`
+simulated wallet whenever a new auth identity is created; the development seed then gives Alex the
+documented `$800` demo balance. The marketplace login path does not require a service-role key.
+
 | Method | Route | Role | Body |
 | --- | --- | --- | --- |
 | `GET` | `/api/marketplace/listings` | Public | — |

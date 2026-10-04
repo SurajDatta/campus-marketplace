@@ -27,7 +27,7 @@ export default function Carousel() {
   const items = [
     {
       title: 'Secure marketplace.',
-      description: "Your safety is our top priority, and we recognize the challenges posed by potential scams. That's why we've implemented robust security measures, including Multi-Factor Authentication (MFA) and a 2-way verification system, to ensure your transactions are secure.",
+      description: "Your safety is our top priority. Server-validated identities, participant-only transaction access, and two-sided price approval help protect each exchange.",
       image: '/images/home/safe.png',
       ctaText: 'Create Account',
       ctaLink: '/signup',

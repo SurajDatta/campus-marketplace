@@ -13,9 +13,6 @@ import { Resend } from "resend";
 import EmailTemplate from "@/components/Email/email-template";
 import { retriveUser } from "./auth";
 
-// Resend API
-const resend = new Resend(process.env.RESEND_API_KEY);
-
 // create a new alert in the database
 export const createAlert = async (userId: string, message: string, imgUrl: string, link: string): Promise<string | null> => {
     const supabase = createClient();
@@ -136,6 +133,11 @@ export const updateAlertSent = async (alertId: string) => {
 
 // send email to user using Resend API
 export const sendEmail = async (userId: string, alertId: string, subject: string, itemTitle: string, actionText: string, heading: string) => {
+    const resendKey = process.env.RESEND_API_KEY;
+    if (!resendKey) {
+        return { success: false, error: "Email delivery is not configured" };
+    }
+    const resend = new Resend(resendKey);
     const { success, user, error } = await retriveUser(userId)
     if (!success || !user || !user.email) {
         return { success: false, error: error };

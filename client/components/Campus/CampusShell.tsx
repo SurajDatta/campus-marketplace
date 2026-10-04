@@ -2,9 +2,11 @@
 
 import Image from "next/image";
 import Link from "next/link";
-import { usePathname } from "next/navigation";
-import type { ReactNode } from "react";
-import { FiArrowUpRight, FiHeart, FiMapPin } from "react-icons/fi";
+import { usePathname, useRouter } from "next/navigation";
+import { useEffect, useState, type ReactNode } from "react";
+import { FiArrowUpRight, FiHeart, FiLogOut, FiMapPin } from "react-icons/fi";
+import type { User } from "@supabase/supabase-js";
+import useSupabaseBrowser from "@/utils/supabase/supabase-browser";
 
 const navItems = [
   { href: "/buy", label: "Browse" },
@@ -14,6 +16,30 @@ const navItems = [
 
 export default function CampusShell({ children, compact = false }: { children: ReactNode; compact?: boolean }) {
   const pathname = usePathname();
+  const router = useRouter();
+  const supabase = useSupabaseBrowser();
+  const [user, setUser] = useState<User | null>(null);
+
+  useEffect(() => {
+    let active = true;
+    supabase.auth.getUser().then(({ data }) => {
+      if (active) setUser(data.user ?? null);
+    });
+    const { data: listener } = supabase.auth.onAuthStateChange((_event, session) => {
+      if (active) setUser(session?.user ?? null);
+    });
+    return () => {
+      active = false;
+      listener.subscription.unsubscribe();
+    };
+  }, [supabase]);
+
+  const signOut = async () => {
+    await supabase.auth.signOut();
+    setUser(null);
+    router.replace("/");
+    router.refresh();
+  };
 
   return (
     <div className="cm-site">
@@ -39,8 +65,13 @@ export default function CampusShell({ children, compact = false }: { children: R
           ))}
         </nav>
         <div className="cm-header-actions">
-          <Link href="/login" className="cm-link-button">Log in</Link>
-          <Link href="/signup" className="cm-button cm-button-small">Join campus <FiArrowUpRight /></Link>
+          {user ? <>
+            <Link href="/my-stuff" className="cm-link-button cm-user-link">{user.user_metadata?.name ?? user.email ?? "Account"}</Link>
+            <button type="button" className="cm-button cm-button-small" onClick={signOut}>Log out <FiLogOut /></button>
+          </> : <>
+            <Link href="/login" className="cm-link-button">Log in</Link>
+            <Link href="/signup" className="cm-button cm-button-small">Join campus <FiArrowUpRight /></Link>
+          </>}
         </div>
       </header>
 

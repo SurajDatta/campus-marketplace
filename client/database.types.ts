@@ -523,7 +523,6 @@ export type Database = {
           last_updated_preferences: string | null
           last_verified: string | null
           listings_created: number
-          mfa_enabled: boolean
           personal_email: string | null
           campus_email: string
           seller_contact: string[]
@@ -563,7 +562,6 @@ export type Database = {
           last_updated_preferences?: string | null
           last_verified?: string | null
           listings_created?: number
-          mfa_enabled?: boolean
           personal_email?: string | null
           campus_email?: string
           seller_contact?: string[]
@@ -603,7 +601,6 @@ export type Database = {
           last_updated_preferences?: string | null
           last_verified?: string | null
           listings_created?: number
-          mfa_enabled?: boolean
           personal_email?: string | null
           campus_email?: string
           seller_contact?: string[]

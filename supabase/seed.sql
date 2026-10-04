@@ -61,7 +61,10 @@ insert into auth.identities (
 
 insert into public.campus_wallets (user_id, available_cents) values
   ('00000000-0000-4000-a000-000000000001', 0),
-  ('00000000-0000-4000-a000-000000000002', 80000);
+  ('00000000-0000-4000-a000-000000000002', 80000)
+on conflict (user_id) do update set
+  available_cents = excluded.available_cents,
+  updated_at = now();
 
 insert into public.campus_listings (
   id, seller_id, title, description, price_cents, state, meetup_options
