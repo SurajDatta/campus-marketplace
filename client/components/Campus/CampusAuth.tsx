@@ -172,6 +172,8 @@ export default function CampusAuth({ mode }: { mode: AuthMode }) {
             <button className="cm-button cm-button-full" type="submit" disabled={busy}>{busy ? "Connecting..." : isLogin ? "Log in" : "Create account"}<FiArrowRight /></button>
           </form>
 
+          {isLogin && <Link href="/forgot-password" className="cm-forgot-link">Forgot your password?</Link>}
+
           <div className="cm-auth-switch">
             {isLogin ? <>New here? <Link href="/signup">Create an account</Link></> : <>Already registered? <Link href="/login">Log in</Link></>}
           </div>

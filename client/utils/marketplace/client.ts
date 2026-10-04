@@ -13,23 +13,50 @@ export class MarketplaceRequestError extends Error {
 }
 
 export async function marketplaceRequest<T>(path: string, init?: RequestInit): Promise<T> {
-  const response = await fetch(path, {
-    ...init,
-    credentials: "include",
-    headers: {
-      ...(init?.body ? { "Content-Type": "application/json" } : {}),
-      ...init?.headers,
-    },
-  });
-  const payload = await response.json() as CampusApiSuccess<T> | CampusApiError;
-  if (!response.ok || "error" in payload) {
-    const error = "error" in payload ? payload.error : null;
+  let response: Response;
+  try {
+    response = await fetch(path, {
+      ...init,
+      credentials: "include",
+      headers: {
+        ...(init?.body ? { "Content-Type": "application/json" } : {}),
+        ...init?.headers,
+      },
+    });
+  } catch {
     throw new MarketplaceRequestError(
-      error?.message ?? "The marketplace request failed",
-      error?.code,
+      "Campus Marketplace could not reach the server. Check your connection and try again.",
+      "NETWORK_ERROR",
+      0,
+    );
+  }
+
+  const rawBody = await response.text();
+  let payload: CampusApiSuccess<T> | CampusApiError | null = null;
+  try {
+    payload = rawBody ? JSON.parse(rawBody) as CampusApiSuccess<T> | CampusApiError : null;
+  } catch {
+    // A proxy or framework error page may be HTML. Do not expose it to the UI.
+  }
+
+  const hasError = Boolean(payload && typeof payload === "object" && "error" in payload);
+  if (!response.ok || hasError) {
+    const error = hasError ? (payload as CampusApiError).error : null;
+    throw new MarketplaceRequestError(
+      error?.message ?? "The marketplace request failed. Please try again.",
+      error?.code ?? "REQUEST_FAILED",
       response.status,
     );
   }
+
+  if (!payload || typeof payload !== "object" || !("data" in payload)) {
+    throw new MarketplaceRequestError(
+      "The server returned an invalid response. Please try again.",
+      "INVALID_RESPONSE",
+      response.status,
+    );
+  }
+
   return payload.data;
 }
 

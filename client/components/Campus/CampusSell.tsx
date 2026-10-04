@@ -1,10 +1,11 @@
 "use client";
 
-import { FormEvent, useMemo, useState } from "react";
+import { FormEvent, useEffect, useMemo, useState } from "react";
 import Link from "next/link";
 import { FiArrowRight, FiCalendar, FiCheck, FiDollarSign, FiInfo, FiMapPin, FiPlus, FiShield, FiTrash2 } from "react-icons/fi";
 import type { CampusListing } from "@/types/marketplace";
 import { formatCampusMoney, MarketplaceRequestError, marketplaceRequest } from "@/utils/marketplace/client";
+import useSupabaseBrowser from "@/utils/supabase/supabase-browser";
 import CampusShell from "./CampusShell";
 
 type MeetupDraft = { startsAt: string; location: string };
@@ -18,6 +19,8 @@ function defaultTime(daysAhead: number, hour: number) {
 }
 
 export default function CampusSell() {
+  const supabase = useSupabaseBrowser();
+  const [authenticated, setAuthenticated] = useState<boolean | null>(null);
   const [title, setTitle] = useState("");
   const [description, setDescription] = useState("");
   const [price, setPrice] = useState("");
@@ -28,6 +31,14 @@ export default function CampusSell() {
   const [busy, setBusy] = useState(false);
   const [error, setError] = useState<string | null>(null);
   const [created, setCreated] = useState<CampusListing | null>(null);
+
+  useEffect(() => {
+    let active = true;
+    supabase.auth.getUser().then(({ data }) => {
+      if (active) setAuthenticated(Boolean(data.user));
+    });
+    return () => { active = false; };
+  }, [supabase]);
 
   const priceCents = useMemo(() => Math.round(Number(price || 0) * 100), [price]);
 
@@ -65,6 +76,14 @@ export default function CampusSell() {
       setBusy(false);
     }
   };
+
+  if (authenticated === null) {
+    return <CampusShell compact><section className="cm-auth-gate"><div className="cm-success-icon"><FiShield /></div><span className="cm-kicker">Checking session</span><h1>Connecting your account.</h1></section></CampusShell>;
+  }
+
+  if (!authenticated) {
+    return <CampusShell compact><section className="cm-auth-gate"><FiShield /><span className="cm-kicker">Seller access</span><h1>Log in before listing an item.</h1><p>Your signed-in identity becomes the listing owner. Seller IDs are never accepted from the form.</p><div><Link href="/login" className="cm-button">Log in <FiArrowRight /></Link><Link href="/signup" className="cm-button cm-button-ghost">Create account</Link></div></section></CampusShell>;
+  }
 
   if (created) {
     return <CampusShell compact><section className="cm-success-page"><div className="cm-success-icon"><FiCheck /></div><span className="cm-kicker">Listing published</span><h1>{created.title} is live.</h1><p>Students can now reserve it for {formatCampusMoney(created.priceCents)} and select one of your {created.meetupOptions.length} meetup options.</p><div><Link href="/buy" className="cm-button">View marketplace <FiArrowRight /></Link><button className="cm-button cm-button-ghost" onClick={() => { setCreated(null); setTitle(""); setDescription(""); setPrice(""); }}>List another</button></div></section></CampusShell>;

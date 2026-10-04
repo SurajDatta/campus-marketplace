@@ -410,6 +410,8 @@ button, input, textarea { font: inherit; }
 .cm-auth-form .cm-field { margin: 0; }
 .cm-auth-form .cm-input-icon input { height: 50px; background: #fbfcfc; }
 .cm-auth-form .cm-button { margin-top: 4px; }
+.cm-forgot-link { width: max-content; margin: 14px auto 0; color: var(--cm-teal-dark); font-size: 11px; font-weight: 800; text-decoration: none; }
+.cm-forgot-link:hover { text-decoration: underline; }
 .cm-auth-switch { margin-top: 22px; color: var(--cm-muted); font-size: 12px; text-align: center; }
 .cm-auth-switch a { color: var(--cm-teal-dark); font-weight: 900; }
 .cm-demo-accounts { margin-bottom: 22px; padding: 15px; border: 1px solid #cbd9f7; border-radius: 14px; background: #f1f5ff; }
@@ -418,6 +420,9 @@ button, input, textarea { font: inherit; }
 .cm-demo-accounts button { flex: 1; min-height: 35px; border: 1px solid #b8caf2; border-radius: 9px; background: white; color: var(--cm-navy); font-size: 10px; font-weight: 800; cursor: pointer; }
 .cm-demo-accounts button:hover { border-color: var(--cm-teal); color: var(--cm-teal-dark); }
 .cm-demo-accounts small { color: var(--cm-muted); font-size: 9px; }
+.cm-reset-layout { min-height: calc(100vh - 190px); padding: 70px 20px; display: grid; place-items: center; background: linear-gradient(150deg, #edf3ff, var(--cm-paper) 55%, #fff8dc); }
+.cm-reset-card { width: min(100%, 520px); border: 1px solid var(--cm-line); border-radius: 26px; background: white; box-shadow: var(--cm-shadow); }
+.cm-form-error { color: var(--cm-danger); background: #fff0ee; }
 
 @media (max-width: 1050px) {
   .cm-header { grid-template-columns: auto 1fr auto; }
