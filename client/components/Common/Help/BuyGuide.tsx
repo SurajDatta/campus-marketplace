@@ -16,7 +16,7 @@ export default function BuyGuide() {
                 <iframe
                     src="https://player.vimeo.com/video/1154510950?badge=0&autopause=0&player_id=0&app_id=58479&title=0&portrait=0&byline=0"
                     allow="autoplay; fullscreen; picture-in-picture; clipboard-write"
-                    title="Campus Marketplace Purchase"
+                    title="Licks Purchase"
                     width="640"
                     height="360"
                     allowFullScreen

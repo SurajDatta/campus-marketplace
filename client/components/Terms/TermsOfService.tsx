@@ -1,6 +1,6 @@
 /**
  * TermsOfService.tsx
- * Terms page for Campus Marketplace, written in html from Termly.
+ * Terms page for Licks, written in html from Termly.
  * @author  Ashok Saravanan, https://github.com/AshokSaravanan222
  * @updated 2024-07-22
  *
@@ -82,7 +82,7 @@ export default function TermsOfService() {
             data-id="9d459c4e-c548-e5cb-7729-a118548965d2"
             data-type="question"
           >
-            Campus Marketplace
+            Licks
           </span>
           <span className="block-component" /> ({" "}
           <span className="block-component" />" <strong>Company</strong>," "{" "}
@@ -144,11 +144,11 @@ export default function TermsOfService() {
           <span style={{ color: "rgb(0, 58, 250)" }}>
             <span className="question">
               <a
-                href="https://campus-marketplace.local"
+                href="https://licks.local"
                 target="_blank"
                 data-custom-class="link"
               >
-                https://campus-marketplace.local
+                https://licks.local
               </a>
             </span>
           </span>{" "}
@@ -211,7 +211,7 @@ export default function TermsOfService() {
         >
           You can contact us by{" "}
           <span className="block-component">
-            email at <span className="question">support@campus-marketplace.local</span>
+            email at <span className="question">support@licks.local</span>
             <span className="block-component" />.{" "}
           </span>
         </span>
@@ -236,7 +236,7 @@ export default function TermsOfService() {
           you, whether personally or on behalf of an entity ({" "}
           <span className="block-component" />" <strong>you</strong>"{" "}
           <span className="statement-end-if-in-editor" />
-          ), and <span className="question">Campus Marketplace</span>, concerning your access
+          ), and <span className="question">Licks</span>, concerning your access
           to and use of the Services. You agree that by accessing the Services,
           you have read, understood, and agreed to be bound by all of these
           Legal Terms. IF YOU DO NOT AGREE WITH ALL OF THESE LEGAL TERMS, THEN
@@ -1028,7 +1028,7 @@ export default function TermsOfService() {
           If you wish to make any use of the Services, Content, or Marks other
           than as set out in this section or elsewhere in our Legal Terms,
           please address your request to:{" "}
-          <span className="question">support@campus-marketplace.local</span>. If we ever
+          <span className="question">support@licks.local</span>. If we ever
           grant you the permission to post, reproduce, or publicly display any
           part of our Services or Content, you must identify us as the owners or
           licensors of the Services, Content, or Marks and ensure that any
@@ -4662,11 +4662,11 @@ export default function TermsOfService() {
               data-type="question"
             >
               <a
-                href="https://campus-marketplace.local/privacy"
+                href="https://licks.local/privacy"
                 target="_blank"
                 data-custom-class="link"
               >
-                https://campus-marketplace.local/privacy
+                https://licks.local/privacy
               </a>
             </span>
           </span>
@@ -6064,7 +6064,7 @@ export default function TermsOfService() {
         <span className="question">
           You can disable receiving text message notifications in the account
           screen at any time. Otherwise, any further questions can be directed
-          towards: support@campus-marketplace.local
+          towards: support@licks.local
         </span>
         <span className="statement-end-if-in-editor" />
       </span>
@@ -6118,7 +6118,7 @@ export default function TermsOfService() {
       <span style={{ fontSize: 15 }}>
         If you have any questions or need assistance regarding our SMS
         communications, please email us at{" "}
-        <span className="question">support@campus-marketplace.local</span>
+        <span className="question">support@licks.local</span>
         <span className="block-component" />. <br />
       </span>
     </div>
@@ -6351,7 +6351,7 @@ export default function TermsOfService() {
       <span style={{ fontSize: 15 }}>
         <span style={{ color: "rgb(89, 89, 89)" }}>
           <span className="question">
-            <strong>Campus Marketplace</strong>
+            <strong>Licks</strong>
           </span>
           <strong>
             <span className="block-component" />
@@ -6486,7 +6486,7 @@ export default function TermsOfService() {
             <strong>
               <span className="question">
                 <span className="block-component" />
-                <span className="question">support@campus-marketplace.local</span>
+                <span className="question">support@licks.local</span>
                 <span className="statement-end-if-in-editor" />
               </span>
             </strong>

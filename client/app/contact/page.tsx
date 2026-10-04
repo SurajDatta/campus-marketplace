@@ -170,7 +170,7 @@ const ContactScreen = () => {
                     </Form>
                 )}
             </Formik>
-            <Text>For demo support, contact support@campus-marketplace.local.</Text>
+            <Text>For demo support, contact support@licks.local.</Text>
         </VStack>
     );
 }

@@ -33,7 +33,7 @@ export default function HelpModal({ finalFocusRef }: HelpModalProps) {
             <Modal isOpen={isOpen} onClose={onClose} finalFocusRef={finalFocusRef}>
                 <ModalOverlay />
                 <ModalContent>
-                    <ModalHeader>Campus Marketplace Guide</ModalHeader>
+                    <ModalHeader>Licks Guide</ModalHeader>
                     <ModalCloseButton />
                     <ModalBody>
                         <Tabs variant='soft-rounded' colorScheme='blue' height={300} overflowY={'auto'}>

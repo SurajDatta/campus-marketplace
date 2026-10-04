@@ -75,7 +75,7 @@ export default function VerifyEmail({ email, resendEmail, emailError, confirmati
                         It can take up to 2 minutes to arrive. Please check your junk folder if you don't see it in your inbox.
                     </Text>
                     <Text fontSize={"sm"} opacity={"0.5"}>
-                        If you still can't find it, add our email as a safe sender in Outlook. Go to <b>Settings</b> {">"} <b>Junk Email</b> {">"} Scroll down to <b>Senders</b> {">"} Add <b>'support@campus-marketplace.local'</b> to the list.
+                        If you still can't find it, add our email as a safe sender in Outlook. Go to <b>Settings</b> {">"} <b>Junk Email</b> {">"} Scroll down to <b>Senders</b> {">"} Add <b>'support@licks.local'</b> to the list.
                     </Text>
                 </VStack>
             </Skeleton>

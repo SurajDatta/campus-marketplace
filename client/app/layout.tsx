@@ -9,8 +9,8 @@ const defaultUrl = process.env.VERCEL_URL
 export const metadata = {
   metadataBase: new URL(defaultUrl),
   title: {
-    default: "Campus Marketplace",
-    template: "%s · Campus Marketplace",
+    default: "Licks",
+    template: "%s · Licks",
   },
   description: "A student marketplace for public meetups, shared price approval, and simulated wallet protection.",
 };

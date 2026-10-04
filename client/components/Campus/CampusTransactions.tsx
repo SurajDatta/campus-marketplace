@@ -140,7 +140,7 @@ export default function CampusTransactions() {
           const step = transaction.status === "completed" ? 4 : bothApproved ? 3 : verified ? 2 : 1;
           return <article className={`cm-transaction-card status-${transaction.status}`} key={transaction.id}>
             <div className="cm-transaction-head">
-              <div><span className="cm-role-tag">You&apos;re the {isSeller ? "seller" : isBuyer ? "buyer" : "participant"}</span><h2>{listing?.title ?? "Campus marketplace item"}</h2><p><FiMapPin /> {transaction.meetup.location} · {formatCampusDate(transaction.meetup.startsAt)}</p></div>
+              <div><span className="cm-role-tag">You&apos;re the {isSeller ? "seller" : isBuyer ? "buyer" : "participant"}</span><h2>{listing?.title ?? "Licks item"}</h2><p><FiMapPin /> {transaction.meetup.location} · {formatCampusDate(transaction.meetup.startsAt)}</p></div>
               <div><span>{transaction.status}</span><strong>{formatCampusMoney(transaction.finalPriceCents)}</strong><small>{transaction.finalPriceCents < transaction.reservedPriceCents ? `${formatCampusMoney(transaction.reservedPriceCents - transaction.finalPriceCents)} below reserved price` : "Reserved price"}</small></div>
             </div>
 

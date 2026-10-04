@@ -44,14 +44,15 @@ export default function CampusShell({ children, compact = false }: { children: R
   return (
     <div className="cm-site">
       <header className="cm-header">
-        <Link href="/" className="cm-brand" aria-label="Campus Marketplace home">
+        <Link href="/" className="cm-brand" aria-label="Licks home">
           <Image
-            src="/images/campus-marketplace-wordmark.png"
-            alt="Campus Marketplace"
-            width={260}
-            height={87}
+            src="/images/campus-marketplace-logo.png"
+            alt=""
+            width={48}
+            height={48}
             priority
           />
+          <span>Licks</span>
         </Link>
         <nav className="cm-nav" aria-label="Primary navigation">
           {navItems.map((item) => (
@@ -81,7 +82,7 @@ export default function CampusShell({ children, compact = false }: { children: R
         <div>
           <Image src="/images/campus-marketplace-logo.png" alt="" width={44} height={44} />
           <div>
-            <strong>Campus Marketplace</strong>
+            <strong>Licks</strong>
             <span>Student exchange, made human.</span>
           </div>
         </div>

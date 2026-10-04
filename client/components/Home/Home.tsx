@@ -1,6 +1,6 @@
 /**
  * Home.tsx
- * Will be used with pre-fetching to show the details of Campus Marketplace.
+ * Will be used with pre-fetching to show the details of Licks.
  * @AshokSaravanan222
  * 09-26-2024
  */
@@ -73,7 +73,7 @@ export default function Home() {
                             src={"/images/campus-marketplace-logo.png"}
                             height={600}
                             width={600}
-                            alt='Campus Marketplace Logo'
+                            alt='Licks Logo'
                             priority
                         />
                     </Box>
@@ -202,7 +202,7 @@ export default function Home() {
     const renderWhyCampusMarketplaceSection = () => {
         return (
             <VStack p={2} align={"end"}>
-                <Text fontSize={{ base: '4xl', md: '7xl' }}>Why Campus Marketplace</Text>
+                <Text fontSize={{ base: '4xl', md: '7xl' }}>Why Licks</Text>
                 <Carousel />
             </VStack>
         )
@@ -243,7 +243,7 @@ export default function Home() {
                                     <Link href='/buy' as={NextLink.default}>
                                         <Image
                                             src="/images/campus-marketplace-logo.png"
-                                            alt="Campus Marketplace Logo"
+                                            alt="Licks Logo"
                                             width={200}
                                             height={200}
                                         />

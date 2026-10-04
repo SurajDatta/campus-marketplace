@@ -49,7 +49,7 @@ export default function SellerJourneyCard({ userProfile, loading, isMobile }: Se
     const steps = [
         {
             title: "Create a seller account",
-            description: "Create a seller account to start selling your items on Campus Marketplace.",
+            description: "Create a seller account to start selling your items on Licks.",
             cta: "Create Account"
         },
         {
@@ -64,7 +64,7 @@ export default function SellerJourneyCard({ userProfile, loading, isMobile }: Se
         },
         {
             title: "You're all set!",
-            description: "You have completed all the steps to become a seller on Campus Marketplace.",
+            description: "You have completed all the steps to become a seller on Licks.",
             cta: "Mark Complete"
         }
     ]
@@ -81,7 +81,7 @@ export default function SellerJourneyCard({ userProfile, loading, isMobile }: Se
             });
             toast({
                 title: 'Journey marked complete.',
-                description: 'You have completed all the steps to become a seller on Campus Marketplace.',
+                description: 'You have completed all the steps to become a seller on Licks.',
                 status: 'success',
                 duration: 5000,
                 isClosable: true,

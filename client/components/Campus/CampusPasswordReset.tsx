@@ -51,7 +51,7 @@ export default function CampusPasswordReset({ mode }: { mode: "request" | "updat
           <div className="cm-success-icon"><FiCheck /></div>
           <span className="cm-kicker">{mode === "request" ? "Email sent" : "Password updated"}</span>
           <h1>{mode === "request" ? "Check your inbox." : "Your new password is ready."}</h1>
-          <p>{mode === "request" ? "Use the secure link in the email to choose a new password." : "Log in again to continue to Campus Marketplace."}</p>
+          <p>{mode === "request" ? "Use the secure link in the email to choose a new password." : "Log in again to continue to Licks."}</p>
           <Link href="/login" className="cm-button">Return to login <FiArrowRight /></Link>
         </section>
       </CampusShell>

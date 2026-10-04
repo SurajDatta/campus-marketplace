@@ -25,7 +25,7 @@ export async function marketplaceRequest<T>(path: string, init?: RequestInit): P
     });
   } catch {
     throw new MarketplaceRequestError(
-      "Campus Marketplace could not reach the server. Check your connection and try again.",
+      "Licks could not reach the server. Check your connection and try again.",
       "NETWORK_ERROR",
       0,
     );

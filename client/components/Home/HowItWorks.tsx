@@ -75,7 +75,7 @@ export default function HowItWorks({ isMobile }: { isMobile: boolean }) {
                         <Text>Buy in seconds, with the flexibility to choose how you meet.</Text>
                         <HStack borderWidth="2px" borderRadius="md" p={4} bg="white" boxShadow="lg" mx="auto">
                             <VStack align={"left"}>
-                                <Text fontSize={"xl"} as={"b"}>Campus Marketplace</Text>
+                                <Text fontSize={"xl"} as={"b"}>Licks</Text>
                                 {renderBenefit("Requires a .edu email")}
                                 {renderBenefit("Pay before meeting up with the seller")}
                                 {renderBenefit("Schedule a meetup at your convenience")}
@@ -110,7 +110,7 @@ export default function HowItWorks({ isMobile }: { isMobile: boolean }) {
                         <Text>Check in using our easy and convenient options.</Text>
                         <HStack borderWidth="2px" borderRadius="md" p={4} bg="white" boxShadow="lg" mx="auto">
                             <VStack align={"left"}>
-                                <Text fontSize={"xl"} as={"b"}>Campus Marketplace</Text>
+                                <Text fontSize={"xl"} as={"b"}>Licks</Text>
                                 {renderBenefit("Share location while meeting up")}
                                 {renderBenefit("Meetup at designated ETS (Blue Light) Pole")}
                                 {renderBenefit("Option to cancel a meetup at no cost")}
@@ -145,7 +145,7 @@ export default function HowItWorks({ isMobile }: { isMobile: boolean }) {
                         <Text>Confirm your purchase at a fair price and without scams.</Text>
                         <HStack borderWidth="2px" borderRadius="md" p={4} bg="white" boxShadow="lg" mx="auto">
                             <VStack align={"left"}>
-                                <Text fontSize={"xl"} as={"b"}>Campus Marketplace</Text>
+                                <Text fontSize={"xl"} as={"b"}>Licks</Text>
                                 {renderBenefit("Negotiate the price at the meetup")}
                                 {renderBenefit("Chance to inspect the item in person before buying")}
                                 {renderBenefit("Cancel the purchase with guaranteed refund")}
@@ -211,7 +211,7 @@ function QuickvScheduled({ step, tabIndex, setTabIndex }: { step: number, tabInd
                                 <iframe
                                     src="https://player.vimeo.com/video/1012373891?badge=0&autopause=0&player_id=0&app_id=58479&autoplay=1&muted=1&controls=0#t=0m18s" // ends at 44s
                                     allow="autoplay; fullscreen; picture-in-picture; clipboard-write"
-                                    title="Campus Marketplace Quick Meetup (Buy)"
+                                    title="Licks Quick Meetup (Buy)"
                                     width="640"
                                     height="360"
                                     allowFullScreen
@@ -220,7 +220,7 @@ function QuickvScheduled({ step, tabIndex, setTabIndex }: { step: number, tabInd
                                 <iframe
                                     src="https://player.vimeo.com/video/1012373953?badge=0&autopause=0&player_id=0&app_id=58479&autoplay=1&muted=1&controls=0#t=0m32s" // ends at 1m06s
                                     allow="autoplay; fullscreen; picture-in-picture; clipboard-write"
-                                    title="Campus Marketplace Scheduled Meetup (Buy)"
+                                    title="Licks Scheduled Meetup (Buy)"
                                     width="640"
                                     height="360"
                                     allowFullScreen
@@ -229,7 +229,7 @@ function QuickvScheduled({ step, tabIndex, setTabIndex }: { step: number, tabInd
                             <iframe
                                 src="https://player.vimeo.com/video/1153438140?badge=0&autopause=0&player_id=0&app_id=58479&autoplay=1&muted=1&controls=0#t=0m4s" // ends at 1m06s
                                 allow="autoplay; fullscreen; picture-in-picture; clipboard-write"
-                                title="Campus Marketplace Scheduled Meetup (Buy)"
+                                title="Licks Scheduled Meetup (Buy)"
                                 width="640"
                                 height="360"
                                 allowFullScreen
@@ -247,7 +247,7 @@ function QuickvScheduled({ step, tabIndex, setTabIndex }: { step: number, tabInd
                                 <iframe
                                     src="https://player.vimeo.com/video/1012373891?badge=0&autopause=0&player_id=0&app_id=58479&autoplay=1&muted=1&controls=0#t=1m33s" // ends at 1m59s
                                     allow="autoplay; fullscreen; picture-in-picture; clipboard-write"
-                                    title="Campus Marketplace Quick Meetup (Check-In)"
+                                    title="Licks Quick Meetup (Check-In)"
                                     width="640"
                                     height="360"
                                     allowFullScreen
@@ -256,7 +256,7 @@ function QuickvScheduled({ step, tabIndex, setTabIndex }: { step: number, tabInd
                                 <iframe
                                     src="https://player.vimeo.com/video/1012373953?badge=0&autopause=0&player_id=0&app_id=58479&autoplay=1&muted=1&controls=0#t=2m40s" // ends at 3m47s
                                     allow="autoplay; fullscreen; picture-in-picture; clipboard-write"
-                                    title="Campus Marketplace Scheduled Meetup (Check-In)"
+                                    title="Licks Scheduled Meetup (Check-In)"
                                     width="640"
                                     height="360"
                                     allowFullScreen
@@ -265,7 +265,7 @@ function QuickvScheduled({ step, tabIndex, setTabIndex }: { step: number, tabInd
                             <iframe
                                 src="https://player.vimeo.com/video/1153438140?badge=0&autopause=0&player_id=0&app_id=58479&autoplay=1&muted=1&controls=0#t=2m10s" // ends at 1m06s
                                 allow="autoplay; fullscreen; picture-in-picture; clipboard-write"
-                                title="Campus Marketplace Scheduled Meetup (Buy)"
+                                title="Licks Scheduled Meetup (Buy)"
                                 width="640"
                                 height="360"
                                 allowFullScreen
@@ -283,7 +283,7 @@ function QuickvScheduled({ step, tabIndex, setTabIndex }: { step: number, tabInd
                                 <iframe
                                     src="https://player.vimeo.com/video/1012373891?badge=0&autopause=0&player_id=0&app_id=58479&autoplay=1&muted=1&controls=0#t=2m58s" // ends at 3m26s
                                     allow="autoplay; fullscreen; picture-in-picture; clipboard-write"
-                                    title="Campus Marketplace Quick Meetup (Confirm)"
+                                    title="Licks Quick Meetup (Confirm)"
                                     width="640"
                                     height="360"
                                     allowFullScreen
@@ -292,7 +292,7 @@ function QuickvScheduled({ step, tabIndex, setTabIndex }: { step: number, tabInd
                                 <iframe
                                     src="https://player.vimeo.com/video/1012373953?badge=0&autopause=0&player_id=0&app_id=58479&autoplay=1&muted=1&controls=0#t=5m05s" // ends at 5m25s
                                     allow="autoplay; fullscreen; picture-in-picture; clipboard-write"
-                                    title="Campus Marketplace Scheduled Meetup (Confirm)"
+                                    title="Licks Scheduled Meetup (Confirm)"
                                     width="640"
                                     height="360"
                                     allowFullScreen
@@ -300,7 +300,7 @@ function QuickvScheduled({ step, tabIndex, setTabIndex }: { step: number, tabInd
                             <iframe
                                 src="https://player.vimeo.com/video/1153438140?badge=0&autopause=0&player_id=0&app_id=58479&autoplay=1&muted=1&controls=0#t=3m13s" // ends at 1m06s
                                 allow="autoplay; fullscreen; picture-in-picture; clipboard-write"
-                                title="Campus Marketplace Scheduled Meetup (Buy)"
+                                title="Licks Scheduled Meetup (Buy)"
                                 width="640"
                                 height="360"
                                 allowFullScreen

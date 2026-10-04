@@ -1,9 +1,9 @@
-# Campus Marketplace
+# Licks
 
-Campus Marketplace is a Next.js 14 and Supabase application for student-to-student listings,
+Licks is a Next.js 14 and Supabase application for student-to-student listings,
 reservations, and verified meetup transactions.
 
-The responsive blue-and-yellow frontend uses the Campus Marketplace logo and opens on a Supabase
+The responsive blue-and-yellow frontend uses the Licks logo and opens on a Supabase
 login screen. It includes the listing browser, seller studio, and shared buyer/seller meetup
 workspace. Those screens call the authenticated marketplace API directly and poll active
 transactions so both devices stay in sync. The active authentication flow uses email and password

@@ -6,7 +6,7 @@ export async function POST() {
     {
       error: {
         code: "REAL_PAYMENTS_DISABLED",
-        message: "Stripe Connect webhooks are disabled. Campus Marketplace uses simulated wallet credits.",
+        message: "Stripe Connect webhooks are disabled. Licks uses simulated wallet credits.",
       },
       meta: { paymentMode: CAMPUS_PAYMENT_MODE },
     },

@@ -275,8 +275,8 @@ export const createStripeAccount = async (userProfile: Profile, user: User, deve
       business_profile: {
         mcc: "7278",
         name: `${userProfile.first_name} ${userProfile.last_name}`,
-        product_description: "Buying and selling of goods on Campus Marketplace. Sell anything from clothes, accessories, collectibles, electronics, and more.",
-        url: `https://campus-marketplace.local/buy/${userProfile.id}`,
+        product_description: "Buying and selling of goods on Licks. Sell anything from clothes, accessories, collectibles, electronics, and more.",
+        url: `https://licks.local/buy/${userProfile.id}`,
         support_phone: user.phone,
       },
       settings: {

@@ -60,7 +60,7 @@ export const SellerReceipt: React.FC<Readonly<SellerReceiptProps>> = ({
                     src={supabaseURL + "/storage/v1/object/public/photos/logo/campus-marketplace-logo.png"}
                     width="75"
                     height="75"
-                    alt="Campus Marketplace Logo"
+                    alt="Licks Logo"
                     style={logo}
                 />
                 <Text style={heading}>Purchase Confirmation</Text>
@@ -86,7 +86,7 @@ export const SellerReceipt: React.FC<Readonly<SellerReceiptProps>> = ({
                 </Section>
                 <Hr style={hr} />
                 <Text style={footer}>
-                    Need help? Contact us at <Link href="campus-marketplace.local/contact">campus-marketplace.local/contact</Link>
+                    Need help? Contact us at <Link href="licks.local/contact">licks.local/contact</Link>
                 </Text>
             </Container>
         </Body>

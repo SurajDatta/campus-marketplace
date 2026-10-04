@@ -46,7 +46,7 @@ Deno.serve(async (req) => {
       })
     )
     const { error: buyerError } = await resend.emails.send({
-      from: "Campus Marketplace <support@campus-marketplace.local>",
+      from: "Licks <support@licks.local>",
       to: [buyer_email],
       subject: `Meetup Time Confirmed for ${item_title}`,
       html: buyerHtml,
@@ -66,7 +66,7 @@ Deno.serve(async (req) => {
       })
     )
     const { error } = await resend.emails.send({
-      from: "Campus Marketplace <support@campus-marketplace.local>",
+      from: "Licks <support@licks.local>",
       to: [seller_email],
       subject: `Meetup Time Confirmed for ${item_title}`,
       html: sellerHtml,

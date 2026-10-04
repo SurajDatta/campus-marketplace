@@ -123,11 +123,11 @@ export default function Header({ userProfile, loggedIn, loading, isMobile, onSig
                                     <Link href="/" as={NextLink.default}>
                                         <HStack spacing={1}>
                                             {/* <Box color={"white"} pb={2}>
-                      <Image src={"/images/campus-marketplace-logo.png"} alt="Campus Marketplace Logo" height={size / 1.5} width={size / 1.5} />
+                      <Image src={"/images/campus-marketplace-logo.png"} alt="Licks Logo" height={size / 1.5} width={size / 1.5} />
                     </Box> */}
                                             <Box color={"white"}>
                                                 <Box>
-                                                    <Image src={"/images/campus-marketplace-wordmark.png"} alt="Campus Marketplace Logo" height={size / 2} width={300} />
+                                                    <Image src={"/images/licks-wordmark.svg"} alt="Licks Logo" height={size / 2} width={300} />
                                                 </Box>
                                             </Box>
                                         </HStack>
@@ -242,11 +242,11 @@ export default function Header({ userProfile, loggedIn, loading, isMobile, onSig
                         <Link href="/" as={NextLink.default}>
                             <HStack spacing={1}>
                                 {/* <Box color={"white"} pb={2}>
-                      <Image src={"/images/campus-marketplace-logo.png"} alt="Campus Marketplace Logo" height={size / 1.5} width={size / 1.5} />
+                      <Image src={"/images/campus-marketplace-logo.png"} alt="Licks Logo" height={size / 1.5} width={size / 1.5} />
                     </Box> */}
                                 <Box color={"white"}>
                                     <Box>
-                                        <Image src={"/images/campus-marketplace-wordmark.png"} alt="Campus Marketplace Logo" height={size / 2} width={300} />
+                                        <Image src={"/images/licks-wordmark.svg"} alt="Licks Logo" height={size / 2} width={300} />
                                     </Box>
                                 </Box>
                             </HStack>
@@ -269,9 +269,9 @@ export default function Header({ userProfile, loggedIn, loading, isMobile, onSig
                         <Link href="/" as={NextLink.default}>
                             <HStack spacing={1}>
                                 {/* <Box color={"white"} pb={2}>
-                                    <Image src={"/images/campus-marketplace-logo.png"} alt="Campus Marketplace Logo" height={size / 1.5} width={size / 1.5} />
+                                    <Image src={"/images/campus-marketplace-logo.png"} alt="Licks Logo" height={size / 1.5} width={size / 1.5} />
                                 </Box> */}
-                                <Image src={"/images/campus-marketplace-wordmark.png"} alt="Campus Marketplace Logo" height={size / 2} color={"white"} width={300} />
+                                <Image src={"/images/licks-wordmark.svg"} alt="Licks Logo" height={size / 2} color={"white"} width={300} />
                             </HStack>
                         </Link>
                         {loggedIn ? <HStack spacing={12}>
@@ -386,10 +386,10 @@ export default function Header({ userProfile, loggedIn, loading, isMobile, onSig
                             <Link href="/" as={NextLink.default}>
                                 <HStack spacing={1}>
                                     {/* <Box color={"white"} pb={1}>
-                    <Image src={"/images/campus-marketplace-logo.png"} alt="Campus Marketplace Logo" height={35} width={35} />
+                    <Image src={"/images/campus-marketplace-logo.png"} alt="Licks Logo" height={35} width={35} />
                   </Box> */}
                                     <Box color={"white"} pb={1} width={"70%"}>
-                                        <Image src={"/images/campus-marketplace-wordmark.png"} alt="Campus Marketplace Logo" height={35} width={300} />
+                                        <Image src={"/images/licks-wordmark.svg"} alt="Licks Logo" height={35} width={300} />
                                     </Box>
                                 </HStack>
                             </Link>

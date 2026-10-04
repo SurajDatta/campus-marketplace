@@ -1,6 +1,6 @@
 /**
  * app/privacy/page.tsx
- * Privacy policy page for Campus Marketplace.
+ * Privacy policy page for Licks.
  *
  * @author  Ashok Saravanan, https://github.com/AshokSaravanan222
  * @updated 2024-07-22

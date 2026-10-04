@@ -1,4 +1,4 @@
-# Campus Marketplace backend integration
+# Licks backend integration
 
 ## Architecture
 
@@ -6,7 +6,7 @@ The application uses Next.js 14 with Supabase Auth, Postgres, and Realtime. It i
 schedule, location, meetup, alert, and check-in screens. The transaction API does not use Stripe,
 manual card captures, Connect accounts, or caller-supplied buyer and seller identities.
 
-The Campus Marketplace backend is isolated in `campus_*` tables and authenticated Postgres RPCs.
+The Licks backend is isolated in `campus_*` tables and authenticated Postgres RPCs.
 Every actor is derived from Supabase `auth.uid()`. Reservations, wallet holds, price approvals,
 completion, and cancellation are serialized with row locks and commit atomically. Money is integer
 cents and every wallet/receipt response says `simulated_wallet`.

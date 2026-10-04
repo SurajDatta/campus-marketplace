@@ -120,7 +120,7 @@ export default function CampusAuth({ mode }: { mode: AuthMode }) {
       <section className="cm-auth-layout">
         <aside className="cm-auth-story">
           <Image src="/images/campus-marketplace-logo.png" alt="" width={96} height={96} priority />
-          <span className="cm-kicker">Campus Marketplace</span>
+          <span className="cm-kicker">Licks</span>
           <h1>One account.<br />Both sides of the deal.</h1>
           <p>Your authenticated session connects listings, wallet holds, meetup verification, and price approvals.</p>
           <ul>

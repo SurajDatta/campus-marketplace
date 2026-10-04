@@ -246,7 +246,7 @@ const SellPage = ({ development }: SellPageProps) => {
                             </>
                         ) : (
                             <VStack align={"left"} spacing={4}>
-                                <Text fontSize={{ base: '5xl', md: '7xl' }}>Begin your seller journey on Campus Marketplace.</Text>
+                                <Text fontSize={{ base: '5xl', md: '7xl' }}>Begin your seller journey on Licks.</Text>
                                 <VStack>
                                     <Text fontSize={{ base: 'md', md: '2xl' }} opacity="0.5">
                                         In order to become a seller on our platform, we require that you enter personal information (to verify your identity) and bank information (to receive funds to your bank account). This process should take no more than 5 minutes.
@@ -364,7 +364,7 @@ const SellPage = ({ development }: SellPageProps) => {
                             Complete Requirements Later
                         </AlertDialogHeader>
                         <AlertDialogBody>
-                            Campus Marketplace will hold all of your sales until you complete the requirements to add payment details. Do you acknowledge this and wish to proceed?
+                            Licks will hold all of your sales until you complete the requirements to add payment details. Do you acknowledge this and wish to proceed?
                         </AlertDialogBody>
                         <AlertDialogFooter>
                             <HStack>

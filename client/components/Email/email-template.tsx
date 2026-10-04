@@ -43,7 +43,7 @@ export const EmailTemplate: React.FC<Readonly<EmailTemplateProps>> = ({
             </Link>
           </Section>
           <Text style={styles.footerText}>
-            If you have any questions, feel free to contact us at campus-marketplace.local/contact.
+            If you have any questions, feel free to contact us at licks.local/contact.
           </Text>
         </Section>
       </Container>

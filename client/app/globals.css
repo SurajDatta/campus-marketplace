@@ -36,7 +36,7 @@
   }
 }
 
-/* Campus Marketplace product UI */
+/* Licks product UI */
 :root {
   --cm-navy: #102a56;
   --cm-navy-2: #173f7a;
@@ -82,8 +82,9 @@ button, input, textarea { font: inherit; }
   backdrop-filter: blur(18px);
 }
 
-.cm-brand { display: inline-flex; align-items: center; width: max-content; }
-.cm-brand img { width: 204px; height: 58px; object-fit: contain; }
+.cm-brand { display: inline-flex; align-items: center; gap: 10px; width: max-content; color: var(--cm-navy); text-decoration: none; }
+.cm-brand img { width: 42px; height: 42px; object-fit: contain; }
+.cm-brand span { font-size: 24px; font-weight: 900; letter-spacing: -.04em; }
 .cm-nav, .cm-header-actions { display: flex; align-items: center; gap: 8px; }
 .cm-nav-link { padding: 10px 16px; border-radius: 999px; color: #445267; font-size: 14px; font-weight: 700; text-decoration: none; transition: .2s ease; }
 .cm-nav-link:hover, .cm-nav-link.is-active { background: #eaf1ff; color: var(--cm-teal-dark); }
@@ -445,7 +446,9 @@ button, input, textarea { font: inherit; }
 
 @media (max-width: 760px) {
   .cm-header { height: auto; min-height: 70px; padding: 9px 18px; grid-template-columns: 1fr auto; }
-  .cm-brand img { width: 174px; height: 50px; }
+  .cm-brand { gap: 7px; }
+  .cm-brand img { width: 38px; height: 38px; }
+  .cm-brand span { font-size: 22px; }
   .cm-nav { grid-row: 2; grid-column: 1 / -1; justify-content: stretch; padding-top: 4px; }
   .cm-nav-link { flex: 1; padding: 8px; text-align: center; }
   .cm-link-button { display: none; }

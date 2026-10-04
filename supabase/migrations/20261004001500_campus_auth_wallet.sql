@@ -1,4 +1,4 @@
--- Connect new Supabase Auth identities to the simulated Campus Marketplace wallet.
+-- Connect new Supabase Auth identities to the simulated Licks wallet.
 -- New accounts start at $0; development demo balances are applied by supabase/seed.sql.
 
 create or replace function public.campus_create_wallet_for_new_user()

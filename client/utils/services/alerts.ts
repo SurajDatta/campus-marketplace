@@ -150,7 +150,7 @@ export const sendEmail = async (userId: string, alertId: string, subject: string
 
     try {
         const { error } = await resend.emails.send({
-            from: 'Campus Marketplace <support@campus-marketplace.local>',
+            from: 'Licks <support@licks.local>',
             to: [user.email],
             subject: subject,
             react: EmailTemplate({ message: alert.message, link: alert.link, imgURL: alert.image_url, itemTitle: itemTitle, actionText: actionText, heading: heading}) as React.ReactElement,

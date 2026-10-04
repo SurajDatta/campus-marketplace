@@ -1,6 +1,6 @@
 /**
  * app/terms/page.tsx
- * Terms of Service for Campus Marketplace.
+ * Terms of Service for Licks.
  *
  * @author  Ashok Saravanan, https://github.com/AshokSaravanan222
  * @updated 2024-07-22

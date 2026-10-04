@@ -49,7 +49,7 @@ export default function Footer() {
           <Link href="/" as={NextLink.default}>
             <Image
               src={"/images/campus-marketplace-logo.png"}
-              alt={`Campus Marketplace Logo`}
+              alt={`Licks Logo`}
               width={100}
               height={100}
             />
@@ -59,7 +59,7 @@ export default function Footer() {
 
 
       <HStack justify="center" mt={8}>
-        <Text>© Campus Marketplace 2025</Text>
+        <Text>© Licks 2025</Text>
       </HStack>
     </Box>
   )

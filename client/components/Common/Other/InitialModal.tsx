@@ -24,13 +24,13 @@ export default function InitialModal({ isOpen, onClose }: InitialModalProps) {
         <Modal isOpen={isOpen} onClose={onClose} motionPreset='slideInBottom'>
             <ModalOverlay />
             <ModalContent>
-                <ModalHeader>Welcome to Campus Marketplace!</ModalHeader>
+                <ModalHeader>Welcome to Licks!</ModalHeader>
                 <ModalCloseButton />
                 <ModalBody>
                     <VStack align={"left"}>
                         <Image
                             src="/images/campus-marketplace-logo.png"
-                            alt="Campus Marketplace Logo"
+                            alt="Licks Logo"
                             width={200}
                             height={200}
                         />

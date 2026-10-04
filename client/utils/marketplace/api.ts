@@ -36,7 +36,7 @@ export async function authenticatedRpc<T>(
   // The shared response types remain explicit while the migration is the RPC source of truth.
   const { data, error } = await (supabase.rpc as any)(functionName, args);
   if (error) {
-    console.error(`Campus Marketplace RPC ${functionName} failed`, {
+    console.error(`Licks RPC ${functionName} failed`, {
       code: error.code,
       message: error.message,
     });

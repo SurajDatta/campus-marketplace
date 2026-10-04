@@ -1,6 +1,6 @@
 /**
  * MadeForSellers.tsx
- * A collection of 3 staggerd cards that will show the benefits of becoming a seller on Campus Marketplace.
+ * A collection of 3 staggerd cards that will show the benefits of becoming a seller on Licks.
  * @AshokSaravanan222
  * @2024-09-13
  */

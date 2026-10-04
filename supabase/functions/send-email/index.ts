@@ -49,9 +49,9 @@ Deno.serve(async (req) => {
         })
       )
       const { error } = await resend.emails.send({
-        from: "Campus Marketplace <support@campus-marketplace.local>",
+        from: "Licks <support@licks.local>",
         to: [email],
-        subject: "Welcome to Campus Marketplace!",
+        subject: "Welcome to Licks!",
         html: html,
       });
       if (error) {
@@ -65,7 +65,7 @@ Deno.serve(async (req) => {
         })
       )
       const { error } = await resend.emails.send({
-        from: "Campus Marketplace <support@campus-marketplace.local>",
+        from: "Licks <support@licks.local>",
         to: [email],
         subject: "Your Verification Code",
         html: html,

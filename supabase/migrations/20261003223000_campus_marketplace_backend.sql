@@ -1,4 +1,4 @@
--- Campus Marketplace backend.
+-- Licks backend.
 -- All payment behavior in this migration is a simulation; no real payment provider is called.
 
 create extension if not exists pgcrypto with schema extensions;

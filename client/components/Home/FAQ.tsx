@@ -131,7 +131,7 @@ export default function FAQ() {
                         </AccordionButton>
                     </h2>
                     <AccordionPanel pb={4}>
-                        For demo support, contact support@campus-marketplace.local.
+                        For demo support, contact support@licks.local.
                     </AccordionPanel>
                 </AccordionItem>
             </Accordion>

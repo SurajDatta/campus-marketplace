@@ -1,6 +1,6 @@
 /**
  * Privacy.tsx
- * Privacy page for Campus Marketplace, written in html from Termly.
+ * Privacy page for Licks, written in html from Termly.
  * @author  Ashok Saravanan, https://github.com/AshokSaravanan222
  * @updated 2024-07-22
  *
@@ -48,7 +48,7 @@ export default function Privacy() {
         <span data-custom-class="body_text">
           This privacy notice for{" "}
           <span className="question">
-            Campus Marketplace <span className="block-component" />
+            Licks <span className="block-component" />
           </span>{" "}
           ( <span className="block-component" />" <strong>we</strong>," "{" "}
           <strong>us</strong>," or "<strong>our</strong>"{" "}
@@ -3537,7 +3537,7 @@ export default function Privacy() {
                                                                         <span data-custom-class="body_text">
                                                                           <span className="block-component" />
                                                                           <span className="question">
-                                                                            support@campus-marketplace.local
+                                                                            support@licks.local
                                                                           </span>
                                                                           <span className="statement-end-if-in-editor" />
                                                                         </span>
@@ -4668,7 +4668,7 @@ export default function Privacy() {
                                                                               contact
                                                                               us
                                                                               at:
-                                                                              support@campus-marketplace.local
+                                                                              support@licks.local
                                                                             </span>
                                                                           </span>
                                                                         </span>

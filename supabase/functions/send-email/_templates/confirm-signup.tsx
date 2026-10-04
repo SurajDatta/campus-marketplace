@@ -33,7 +33,7 @@ export const ConfirmSignupEmail = ({
   <Html>
     <Head />
     <Preview>
-      Welcome to Campus Marketplace!
+      Welcome to Licks!
     </Preview>
     <Body style={main}>
       <Container style={container}>
@@ -41,12 +41,12 @@ export const ConfirmSignupEmail = ({
           src={supabaseURL + "/storage/v1/object/public/photos/logo/campus-marketplace-logo.png"}
           width="150"
           height="150"
-          alt="Campus Marketplace Logo"
+          alt="Licks Logo"
           style={logo}
         />
         <Text style={paragraph}>{`Hi ${first_name},`}</Text>
         <Text style={paragraph}>
-          Thank you for signing up for Campus Marketplace! Click this link to confirm your email address.
+          Thank you for signing up for Licks! Click this link to confirm your email address.
         </Text>
         <Section style={btnContainer}>
           <Button style={button} href={`${redirect_to}/auth/callback?token_hash=${token_hash}&type=${type}&redirect_to=${redirect_to}&email=${email}`}
@@ -56,7 +56,7 @@ export const ConfirmSignupEmail = ({
         </Section>
         <Hr style={hr} />
         <Text style={footer}>
-          Need help? Contact us at <Link href="campus-marketplace.local/contact">campus-marketplace.local/contact</Link>
+          Need help? Contact us at <Link href="licks.local/contact">licks.local/contact</Link>
         </Text>
       </Container>
     </Body>

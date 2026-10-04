@@ -159,7 +159,7 @@ const UpdateScreen = ({ userProfile, isLoading }: { userProfile: Profile | null,
                     style={{ width: "100px", height: "100px" }}
                     colors="primary:#000000"
                 />
-                <Heading>Campus Marketplace Updates</Heading>
+                <Heading>Licks Updates</Heading>
             </HStack>
             <Text>Get details of when we officially launch, our latest feature updates, and increased availability on the marketplace.</Text>
             <Skeleton isLoaded={!isLoading} height={isLoading ? "100vh" : "auto"}>

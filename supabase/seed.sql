@@ -1,4 +1,4 @@
--- Development-only, repeatable Campus Marketplace demo reset.
+-- Development-only, repeatable Licks demo reset.
 -- `supabase db reset` runs this file locally. Never run it against production.
 
 truncate table
@@ -72,7 +72,7 @@ insert into public.campus_listings (
   '00000000-0000-4000-a000-000000000100',
   '00000000-0000-4000-a000-000000000001',
   'MacBook',
-  'Demo MacBook listed by Sarah for the Campus Marketplace walkthrough.',
+  'Demo MacBook listed by Sarah for the Licks walkthrough.',
   50000,
   'available',
   '[

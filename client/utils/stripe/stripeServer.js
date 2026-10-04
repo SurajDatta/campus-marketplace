@@ -1,7 +1,7 @@
-// Campus Marketplace uses simulated wallet credits. This compile-compatible stub
+// Licks uses simulated wallet credits. This compile-compatible stub
 // deliberately has no Stripe SDK instance or credential, so it cannot issue a request.
 const disabled = (..._args) => {
-  throw new Error('Real Stripe requests are disabled. Use the Campus Marketplace simulated-wallet API.');
+  throw new Error('Real Stripe requests are disabled. Use the Licks simulated-wallet API.');
 };
 
 /** @type {any} */
